@@ -8,7 +8,7 @@ if password == secret_password:
 
 else:
     print('Sorry, wrong password.')
-
+# input and if else statements for read_syllabus
 read_syllabus = input('Enter Y if you have read the syllabus for the class: ')
 if read_syllabus != 'Y':
     print('Please read the syllabus carefully, there is important info in it. Thanks!')
