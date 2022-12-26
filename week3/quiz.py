@@ -7,4 +7,4 @@ if answer == 'Madison':
     print("That's Correct!")
 
 else:
-    print("That's not right!")
+    print("Sorry, That's not correct!")
