@@ -5,6 +5,7 @@ unit_price = float(input('Enter unit price of ' + item_name + ': $'))
 items_sold = int(input('Enter quantity of ' + item_name + ' sold: '))
 # calculate the total for all items sold
 total = unit_price * items_sold
+# adjusting format to have the total prices list have 2 digits after the decimal
 format_float = "{:.2f}".format(float)
 float = total
 format_float_unit_price = "{:.2f}".format(unit_price)
