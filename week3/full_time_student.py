@@ -24,3 +24,13 @@ elif quiz_score >= 70:
 
 else:
     print('You failed the test')
+
+# star id length verification
+# get username
+name = input('Please enter your name: ')
+# get users starid
+star_id = input('Please enter your StarID: ')
+if len(star_id) == 8:
+    print('Welcome ' + name)
+else:
+    print('Invalid StarID')
