@@ -18,14 +18,16 @@ else:
     print('You must take either C# or Java before you can take Apple Mobile Development')
 
 # temperature
-temperature = float(input('Enter the temperature in fahrenheit: '))
+temperature = float(input('Enter the temperature in Fahrenheit: '))
 
 if temperature <= 32:
     print('It is below freezing. Watch out for ice.')
 # nesting if statements
-    snowing = input('Enter "Y" if it is snowing today: ')
+    snowing = input('Enter "Y" or "N" is it is snowing today: ')
     if snowing == 'Y':
         print('Snow boots are recommended today!')
+    elif snowing == 'N':
+        print('Be sure to bundle up!')
 
 else:
     print("It's above freezing today.")
