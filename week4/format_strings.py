@@ -12,5 +12,6 @@ print(f'The {sd_program} in the {department} at {college} requires {sd_program_c
 # the percentage has more than 2 decimals places which is why .2f is there to make the percentage more readable
 print(f'{percent_sd_students:.2f}% of students in the {department} are in the {sd_program}')
 # doing quick math to calculate the remaining students with other majors and writing it in a formatted string
+# able to call functions inside a format string or do math. But best to not make it complicated
 print(f'The {total_students - sd_student} students in the {department} have other majors')
 
