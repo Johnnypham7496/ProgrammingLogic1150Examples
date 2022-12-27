@@ -17,5 +17,15 @@ if csharp == 'yes' or java == 'yes':
 else:
     print('You must take either C# or Java before you can take Apple Mobile Development')
 
+# temperature
+temperature = float(input('Enter the temperature in fahrenheit: '))
 
+if temperature <= 32:
+    print('It is below freezing. Watch out for ice.')
+# nesting if statements
+    snowing = input('Enter "Y" if it is snowing today: ')
+    if snowing == 'Y':
+        print('Snow boots are recommended today!')
 
+else:
+    print("It's above freezing today.")
