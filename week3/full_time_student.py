@@ -30,7 +30,8 @@ else:
 name = input('Please enter your name: ')
 # get users starid
 star_id = input('Please enter your StarID: ')
+while len(star_id) != 8:
+    print('Error - A valid StarID has 8 characters')
+    star_id = input('Please enter your StarID: ')
 if len(star_id) == 8:
     print('Welcome ' + name)
-else:
-    print('Invalid StarID')
