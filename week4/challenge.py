@@ -6,9 +6,9 @@ for letter in name:
 print()
 square_size = 10
 square_character = 'Johnny'
-
 for y in range(square_size):
     line = ''
     for x in range(square_size):
         line = line + square_character
-        print(line)
+        print(line, end="")
+
