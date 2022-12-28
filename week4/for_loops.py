@@ -24,3 +24,19 @@ for dice in range(number_of_dice):
     print(f'About to roll {number_of_dice} dice...')
     dice_value = random.randint(1,6)
     print(f'Dice {dice + 1} rolled {dice_value}')
+
+print()
+number_of_books = int(input('How many books did you buy?: '))
+
+total = 0
+for book in range(number_of_books):
+    book_price = float(input('Enter the price of the book: $'))
+    if book_price == 0:
+        print('Nice you got a free book!')
+
+    total = total + book_price
+
+print(f'The total price for all {number_of_books} books is ${total:.2f}')
+
+# for loops is for when you know you want it to stop/have the task repeat a limit number of times
+# while loops is for when you don't know when you want it to stop and to have it keep repeating
