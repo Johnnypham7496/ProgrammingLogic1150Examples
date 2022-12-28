@@ -15,3 +15,12 @@ import random
 for dice in range(5):
     dice_value = random.randint(1,6)
     print(dice_value)
+
+print()
+import random
+
+number_of_dice = int(input('How many dice do you want to roll?: '))
+for dice in range(number_of_dice):
+    print(f'About to roll {number_of_dice} dice...')
+    dice_value = random.randint(1,6)
+    print(f'Dice {dice + 1} rolled {dice_value}')
