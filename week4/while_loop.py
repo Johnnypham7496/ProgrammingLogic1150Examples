@@ -9,4 +9,6 @@ while more_books:
     if anymore == 'N':
         more_books = False
 
-    print(f'The total of all the book is ${total}')
+    print(f'The total of all the book is ${total:.2f}')
+
+    
