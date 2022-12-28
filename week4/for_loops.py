@@ -27,7 +27,6 @@ for dice in range(number_of_dice):
 
 print()
 number_of_books = int(input('How many books did you buy?: '))
-
 total = 0
 for book in range(number_of_books):
     book_price = float(input('Enter the price of the book: $'))
@@ -40,3 +39,21 @@ print(f'The total price for all {number_of_books} books is ${total:.2f}')
 
 # for loops is for when you know you want it to stop/have the task repeat a limit number of times
 # while loops is for when you don't know when you want it to stop and to have it keep repeating
+
+print()
+name = 'Johnny'
+for letter in name:
+    print(letter)
+
+print()
+square_size = 1
+square_character = 'Johnny'
+for letter in square_character:
+    for y in range(square_size):
+        line = ''
+        for x in range(square_size):
+            line = line + square_character
+            print(line)
+
+
+
