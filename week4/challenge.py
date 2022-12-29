@@ -5,10 +5,11 @@ for letter in name:
 
 print()
 square_size = 10
-square_character = 'Johnny'
+square_character = input('Enter your name: ')
+name_length = len(square_character)
 for y in range(square_size):
     line = ''
-    for x in range(square_size):
+    for x in range(name_length):
         line = line + square_character
-        print(line, end="")
+        print(line)
 
