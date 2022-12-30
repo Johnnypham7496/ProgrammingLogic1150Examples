@@ -8,7 +8,7 @@ print(f'The class code in uppercase is {uppercase_class_code}')
 print()
 # string
 email = 'CONTACT@MINNEAPOLIS.EDU'
-# function calling the uppercase letters and changeing them to lowercase
+# function calling the uppercase letters and changing them to lowercase
 lowercase_email = email.lower()
 # output
 print(f'The lowercase of the email is {lowercase_email}')
