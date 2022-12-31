@@ -36,6 +36,20 @@ def string_repeater(text, n):
 main()
 
 print()
+
+def is_password_long_enough(password):
+    if len(password) >= 8:
+        return True
+    else:
+        return False
+
+def main():
+    password = 'kittens'
+    print(is_password_long_enough(password))
+
+main()
+
+print()
 def rectangle_area(height, width):
     area = height * width
     return area
