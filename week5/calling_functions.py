@@ -50,8 +50,8 @@ def main():
 main()
 
 print()
-def rectangle_area(height, width):
-    area = height * width
+def rectangle_area(rectangle_height, rectangle_width):
+    area = rectangle_height * rectangle_width
     return area
 
 def main():
