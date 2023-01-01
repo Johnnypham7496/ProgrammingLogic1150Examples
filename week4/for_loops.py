@@ -1,4 +1,6 @@
 # for loop statement, will start counting from 0 first (argument - 1)
+import time
+
 for number in range(11):
     print(number)
 
@@ -40,20 +42,8 @@ print(f'The total price for all {number_of_books} books is ${total:.2f}')
 # for loops is for when you know you want it to stop/have the task repeat a limit number of times
 # while loops is for when you don't know when you want it to stop and to have it keep repeating
 
-print()
-name = 'Johnny'
-for letter in name:
-    print(letter)
-
-print()
-square_size = 1
-square_character = 'Johnny'
-for letter in square_character:
-    for y in range(square_size):
-        line = ''
-        for x in range(square_size):
-            line = line + square_character
-            print(line)
-
-
+for seconds in range(10,0,-1):
+    print(seconds)
+    time.sleep(1)
+print('Happy new year!')
 
