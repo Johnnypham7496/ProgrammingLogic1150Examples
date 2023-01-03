@@ -12,9 +12,8 @@ def word_square(word):
         print(word)
 
 
-
 def user_wants_to_continue(task):
-    response = input(f'Do you want to {task}? Enter "Y" for yes, anything else for no. ')
+    response = input(f'Do you want to {task}? Enter "Y" for yes, anything else for no: ')
     if response.upper() == 'Y':
         return True
     return False
