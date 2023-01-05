@@ -7,11 +7,11 @@
 # elif pennies > 100:
 #    print(f'You have ${dollars} dollars')
 
-
+state_represent = input('What state do you want to represent?: ')
 senator_age = int(input('How old are you?: '))
 citizen_duration = int(input('How many years have you lived in the United States?: '))
-inhabitants = input('Do you have inhabitants within the state to help represent? Enter yes or no: ')
-if senator_age < 30:
+inhabitants = input('Do you curretnly live in this state? Enter yes or no: ')
+if senator_age <= 30:
     print('You must be at least 30 years old to be a senator.')
 
     if citizen_duration < 9:
@@ -20,8 +20,8 @@ if senator_age < 30:
         print()
 
     if inhabitants == 'no':
-        print('You need inhabitants of the state to help represent you.')
+        print('You need to be an inhabitant of the state to be able to represent it')
     else:
         print()
 else:
-    print('You are qualified to be a senator!')
+    print(f'You are qualified to be a senator of {state_represent}')
