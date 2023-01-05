@@ -61,3 +61,6 @@ colleges.reverse
 # for loop to print the list 1 string at a time instead of all under 1 line
 for college in colleges:
     print(college)
+
+zero = [0] * 100
+print(zero)
