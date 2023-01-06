@@ -35,20 +35,17 @@ def main():
     computer_memory = int(input('How many gigabytes of memory does your computer have?: '))
     processor_speed = float(input('What is the current speed of you processor?: '))
     operating_system = input('What is the name of your current OS?: ')
-    upgrade = specs_check(computer_memory, processor_speed, operating_system)
-    print(upgrade)
+    specs_check(computer_memory, processor_speed, operating_system)
+
+
 
 def specs_check(ram, ps, os):
-    if ram >= 1:
-        return 'You meet the minimum requirements to upgrade to Windows 10'
-    elif ps >= 1:
-        return 'You meet the minimum requirements to upgrade to Windows 10'
 
-    elif os == 'Windows 8' or 'Windows 7':
-        return 'You meet the minimum requirements to upgrade to Windows 10'
+    for os in specs_check(ram, ps, os):
 
-    else:
-        return 'You do not meet the minimum requirements to upgrade your computer.'
-
+        if ram >= 1 and ps >= 1 and os == 'Windows 8':
+            print('You meet the minimum requirements to upgrade to Windows 10')
+        else:
+            print('You do not meet the minimum requirements to upgrade your computer.')
 
 main()
