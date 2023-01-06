@@ -33,5 +33,9 @@ number_of_semester = int(input('How many semesters did you teach Programming Log
 total = 0
 for semester in range(number_of_semester):
     students_per_semester = int(input('How many students registered for Programming Logic this semester?: '))
+
     total = total + students_per_semester
-    print(f'The total number of students that registered for Programming Logic {total}')
+print(f'The total number of students that registered for Programming Logic {total}')
+
+total = total / 4
+print(f'The average numbers of students registers is {total}')
