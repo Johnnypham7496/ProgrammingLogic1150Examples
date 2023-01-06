@@ -1,11 +1,13 @@
-# pennies = int(input('How many pennies do you have?: '))
-# dollars = (pennies // 100)
-# if pennies < 100:
-#    print(f'You have {pennies} pennies.')
-# elif pennies == 100:
-#    print(f'You have ${dollars}')
-# elif pennies > 100:
-#    print(f'You have ${dollars} dollars')
+"""
+pennies = int(input('How many pennies do you have?: '))
+dollars = (pennies // 100)
+if pennies < 100:
+    print(f'You have {pennies} pennies.')
+elif pennies == 100:
+    print(f'You have ${dollars}')
+elif pennies > 100:
+    print(f'You have ${dollars} dollars')
+"""
 
 state_represent = input('What state do you want to represent?: ')
 senator_age = int(input('How old are you?: '))
