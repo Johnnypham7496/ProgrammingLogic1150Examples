@@ -21,16 +21,19 @@ def main():
         response = input('Are there any names you want to delete? Type yes or press enter: ')
         if response == 'yes':
             remove_name = input('What name would you like to remove?: ')
+            if remove_name in guest_list:
+                guest_list.remove(remove_name)
+                print(f'{remove_name} deleted from the list')
+            else:
+                print('Name not found')
         else:
             break
 
-        guest_list.remove(remove_name)
         for number, names in enumerate(guest_list):
             print(number, names)
 
     prize = pick_prizes(guest_list)
     total_number_of_guests = len(guest_list)
-
     print(f'The total number of guests is {total_number_of_guests}')
 
     for number, names in enumerate(guest_list):
@@ -41,10 +44,10 @@ def main():
 def pick_prizes(guest_list):
     prize = ['Gopro', 'Ps5', '3090 Ti', 'Roomba', 'Car', 'Motorcycle']
     random_prize = random.choice(prize)
-    random_guest = random.choice(guest_list)
+    winner = random.choice(guest_list)
     prize_counter = int(input('How many prizes should there be?: '))
 
-    return f'{random_guest} has won a {random_prize}'
+    return f'{winner} has won a {random_prize}'
 
 
 main()
