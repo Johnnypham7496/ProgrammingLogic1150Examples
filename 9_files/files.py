@@ -19,7 +19,20 @@ planets.write('Hello Saturn\n')
 planets.close()
 # 'r' will read the context of the txt file and display when program is run
 # use for loop to read each line of the text to display line by line
+# read() will return all the data in the txt without changing the context
 planets = open('planets.txt', 'r')
 for line in planets:
     print(line)
 planets.close()
+print()
+# this will read the txt file and create a variable based off the content
+planets = open('planets.txt', 'r')
+lines = planets.read()
+planets.close()
+
+print('All of the lines from the txt file:')
+print(lines)
+
+print('All the lines one by  one: ')
+for line in lines:
+    print(line, end='')
