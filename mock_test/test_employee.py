@@ -33,6 +33,16 @@ class TestEmployee(unittest.TestCase):
         self.assertEqual(emp_2.fullname, 'Johnny Huynh')
 
 
+    def test_apply_raise(self):
+        emp_1 = Employee('Johnny', 'Pham', 70000)
+        emp_2 = Employee('Anh', 'Huynh', 70000)
+
+        emp_1.apply_raises()
+        emp_2.apply_raises()
+
+        self.assertEqual(emp_1.pay, 73500)
+        self.assertEqual(emp_2.pay, 73500)
+
 
 
 if __name__ == '__main__':
