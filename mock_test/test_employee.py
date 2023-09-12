@@ -26,6 +26,12 @@ class TestEmployee(unittest.TestCase):
         self.assertEqual(emp_1.fullname, 'Johnny Pham')
         self.assertEqual(emp_2.fullname, 'Anh Huynh')
 
+        emp_1.first = 'Anh'
+        emp_2.first = 'Johnny'
+
+        self.assertEqual(emp_1.fullname, 'Anh Pham')
+        self.assertEqual(emp_2.fullname, 'Johnny Huynh')
+
 
 
 

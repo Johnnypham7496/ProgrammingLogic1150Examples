@@ -12,7 +12,7 @@ class Employee():
     def email(self):
         return f'{self.first}.{self.last}@email.com'
     
-
+    @property
     def fullname(self):
         return f'{self.first} {self.last}'
     
