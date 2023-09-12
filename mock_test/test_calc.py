@@ -21,9 +21,11 @@ class TestCalc(unittest.TestCase):
 
     def test_divide(self):
         self.assertEqual(calc.divide(49, 7), 7)
-        self.assertEqual(calc.divide(50, 5), 10)
+        self.assertEqual(calc.divide(50, -5), -10)
         self.assertEqual(calc.divide(98, 7), 14)
 
+        with self.assertRaises(ValueError):
+            calc.divide(10, 0)
 
 
 
