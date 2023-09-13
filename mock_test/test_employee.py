@@ -60,6 +60,16 @@ class TestEmployee(unittest.TestCase):
         self.assertEqual(self.emp_2.pay, 73500)
 
 
+    def test_monthly_schedule(self):
+        with patch('employee.requests.get') as mock_get:
+            mock_get.return_value.ok = True
+            mock_get.return_value.text = 'Success!'
+
+            schedule = self.emp_1.monthly_schedule('May')
+            mock_get.assert_called_with('http://company.com/Pham/May')
+            self.assertEqual(schedule, 'Success!')
+
+
     
 
 
