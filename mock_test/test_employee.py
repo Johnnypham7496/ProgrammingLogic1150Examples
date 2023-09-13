@@ -1,5 +1,5 @@
 import unittest
-import requests
+from unittest.mock import patch
 from employee import Employee
 
 
@@ -60,12 +60,7 @@ class TestEmployee(unittest.TestCase):
         self.assertEqual(self.emp_2.pay, 73500)
 
 
-    def monthly_schedule(self, month):
-        response = requests.get(f'http://company.com/{self.last}/{month}')
-        if response.ok:
-            return response.text
-        else:
-            return 'Bad response'
+    
 
 
 if __name__ == '__main__':
