@@ -70,6 +70,15 @@ class TestEmployee(unittest.TestCase):
             self.assertEqual(schedule, 'Success!')
 
 
+        with patch('employee.requests.get') as mock_get:
+            mock_get.return_value.ok = False
+            mock_get.return_value.text = 'Bad response'
+
+            schedule = self.emp_2.monthly_schedule('June')
+            mock_get.assert_called_with('http://company.com/Huynh/June')
+            self.assertEqual(schedule, 'Bad response')
+
+            
     
 
 
