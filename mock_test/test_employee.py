@@ -4,6 +4,18 @@ from employee import Employee
 
 class TestEmployee(unittest.TestCase):
 
+    # setup and teardown class are working with the class itself rather than the instance. 
+    # Used mainly for one time otherwise this end up being costly
+    @classmethod
+    def setUpClass(cls):
+        print('setupClass\n')
+
+    
+    @classmethod
+    def tearDownClass(cls):
+        print('tearDownClass')
+
+    # code below are instances
     def setUp(self):
         print('setUp')
         self.emp_1 = Employee('Johnny', 'Pham', 70000)
