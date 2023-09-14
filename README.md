@@ -1,2 +1,5 @@
 # python-projects
-my sample python code
+
+
+
+Programming concepts course for beginners using python language
