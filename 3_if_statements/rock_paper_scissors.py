@@ -1,3 +1,5 @@
+""" Play rock - paper - scissors against a computer """
+
 # rock paper scissors if else thing
 # this allows python to use code to do things like choosing a random option or number
 import random
