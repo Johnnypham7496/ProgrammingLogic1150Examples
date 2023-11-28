@@ -1,11 +1,8 @@
 """ Play rock - paper - scissors against a computer """
-
-# rock paper scissors if else thing
-# this allows python to use code to do things like choosing a random option or number
-import random
+import secrets
 
 # this line will have the computer choose randomly for rock paper scissors
-computer_choice = random.choice(['rock', 'paper', 'scissors'])
+computer_choice = secrets.SystemRandom().choice(['rock', 'paper', 'scissors'])
 # human choice
 human_choice = input('Enter "rock", "paper" or "scissors": ')
 if human_choice != 'rock' and human_choice != 'paper' and human_choice != 'scissors':

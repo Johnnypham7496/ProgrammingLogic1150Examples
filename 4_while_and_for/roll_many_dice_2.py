@@ -1,4 +1,4 @@
-import random
+import secrets
 
 # It's often a good idea to save all of your program's data in variables
 number_of_dice = 5
@@ -11,5 +11,5 @@ print(f'About to roll {number_of_dice} dice...')
 
 
 for dice in range(number_of_dice):
-    dice_value = random.randint(1, 6)
+    dice_value = secrets.SystemRandom().randint(1, 6)
     print(dice_value)

@@ -1,4 +1,4 @@
-import random
+import secrets
 
 
 def main():
@@ -43,8 +43,8 @@ def main():
 
 def pick_prizes(guest_list):
     prize = ['Gopro', 'Ps5', '3090 Ti', 'Roomba', 'Car', 'Motorcycle']
-    random_prize = random.choice(prize)
-    winner = random.choice(guest_list)
+    random_prize = secrets.SystemRandom().choice(prize)
+    winner = secrets.SystemRandom().choice(guest_list)
     prize_counter = int(input('How many prizes should there be?: '))
 
     return f'{winner} has won a {random_prize}'

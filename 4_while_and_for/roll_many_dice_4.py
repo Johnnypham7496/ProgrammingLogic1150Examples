@@ -1,4 +1,4 @@
-import random
+import secrets
 
 # Ask the user how many dice to roll
 number_of_dice = int(input('How many dice to roll? '))
@@ -9,5 +9,5 @@ number_of_dice = int(input('How many dice to roll? '))
 print(f'About to roll {number_of_dice} dice...')
 
 for dice in range(number_of_dice):
-    dice_value = random.randint(1, 6)
+    dice_value = secrets.SystemRandom().randint(1, 6)
     print(f'Dice {dice + 1} value is {dice_value}')

@@ -1,6 +1,6 @@
-import random
 
 import states as states
+import secrets
 
 # The quiz data. Keys are states and values are their capitals.
 capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
@@ -32,16 +32,16 @@ for quiz_number in range(35):
     quiz_file.write('\n\n')
 
 states = list(capitals.keys())
-random.shuffle(states)
+secrets.SystemRandom().shuffle(states)
 
 for question_number in range(50):
     correct_answers = capitals[states[question_number]]
     wrong_answer = list(capitals.values())
     del wrong_answer[wrong_answer.index(correct_answers)]
-    wrong_answer = random.sample(wrong_answer, 3)
+    wrong_answer = secrets.SystemRandom().sample(wrong_answer, 3)
 
     answer_options = wrong_answer + [correct_answers]
-    random.shuffle(answer_options)
+    secrets.SystemRandom().shuffle(answer_options)
 
     quiz_file.write(f'What is the capital of {question_number + 1, states[question_number]}')
     for i in range(4):
