@@ -27,10 +27,10 @@ def main():
 def read_states_file(filename):
     states_list = []
     try:
-        f = open(filename)
-        for state in f:
-            state = state.strip()  # Remove newline
-            states_list.append(state)
+        with open(filename) as f:
+            for state in f:
+                state = state.strip()  # Remove newline
+                states_list.append(state)
     except IOError:
         print(f'States visited file not found, will be created.')
 
