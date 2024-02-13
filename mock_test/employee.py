@@ -1,4 +1,4 @@
-import requests
+from security import safe_requests
 
 class Employee():
 
@@ -25,7 +25,7 @@ class Employee():
 
     
     def monthly_schedule(self, month):
-        response = requests.get(f'http://company.com/{self.last}/{month}')
+        response = safe_requests.get(f'http://company.com/{self.last}/{month}')
         if response.ok:
             return response.text
         else:
